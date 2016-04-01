@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>打字机效果</title>
+        <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="js/typinghuil.js"></script>
+        <style type="text/css">
+            *{
+            }
+            li{
+                list-style: none;
+            }
+            a{
+                font-family: "微软雅黑";
+                font-size:20px;
+                color:#000;
+                text-decoration:none;
+            }
+        </style>
+        <script type="text/javascript">
+        $(function(){
+            //默认效果
+            $(".typing").typinghuil();
+            
+            //修改参数
+            $(".typing2").typinghuil({
+                typsd: 150,       //打字速度
+                typtjg: 4000,      //一条停顿多少时间
+                typfh: "<span style='color:red'>|</span>"        //打字符号
+            });
+
+        });
+        </script>
+    </head>
+    
+    <body>
+        <h3>默认效果</h3>
+        <div class="typing">
+            <ul>
+                <li><a href="##" target="_blank" title="“喜迎猴年”春联书写赠送活动">“喜迎猴年”春联书写赠送活动</a></li>
+                <li><a href="##" target="_blank" title="春节期间开放时间公告">春节期间开放时间公告春节期间开放时间公告</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好书春节期间开放时间公告推荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好春节期间开放时间公告书推荐2</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好春节期间开放时间公告书推3</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好春节期间开放时间公告书推4荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好5书春节期间开放时间公告推荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月7好书推春节期间开放时间公告荐</a></li>
+            </ul>
+        </div>
+
+        <h3>修改参数</h3>
+        <div class="typing2">
+            <ul>
+                <li><a href="##" target="_blank" title="“喜迎猴年”春联书写赠送活动">“喜迎猴年”春联书写赠送活动</a></li>
+                <li><a href="##" target="_blank" title="春节期间开放时间公告">春节期间开放时间公告</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好书推荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好书推荐2</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好书推3</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好书推4荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月好5书推荐</a></li>
+                <li><a href="##" target="_blank" title="1月好书推荐">1月7好书推荐</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
